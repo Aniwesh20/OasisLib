@@ -26,6 +26,7 @@ function Login() {
   };
 
   return (
+    <div className="wrapper">
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
@@ -33,6 +34,7 @@ function Login() {
           <label>Email:</label>
           <input
             type="email"
+            className="round"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -45,7 +47,7 @@ function Login() {
         <button type="submit">Login</button>
       </form>
       <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
-    </div>
+    </div></div>
   );
 }
 

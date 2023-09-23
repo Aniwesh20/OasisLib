@@ -1,12 +1,13 @@
 /* Signup.css */
 
 .signup-container {
-    max-width: 400px;
-    margin: 0 auto;
+  text-align: center;
+    max-width: 50vh;
+    margin: 15vh auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f7f7f7;
+    border-radius: 15px;
+    background-color: #d79292;
   }
   
   h2 {
@@ -32,7 +33,7 @@
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px;
   }
   
   button[type="submit"] {
@@ -42,7 +43,7 @@
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
   }

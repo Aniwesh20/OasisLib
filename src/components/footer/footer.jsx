@@ -4,7 +4,7 @@ import './footer.css'
 function Footer() {
   return (
     <>
-      <div className="main">
+      {/* <div className="main">
 
       </div>
       <div className="footer">
@@ -188,7 +188,7 @@ function Footer() {
             />
           </filter>
         </defs>
-      </svg>
+      </svg> */}
     </>
   );
 }
