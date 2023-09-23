@@ -1,5 +1,6 @@
 import React from 'react';
 import { useGlobalContext } from '../../context.';
+import SearchForm from "../SearchForm/SearchForm";
 import Book from "../BookList/Book";
 import Loading from "../Loader/Loader";
 import coverImg from "../../images/cover_not_found.jpg";
@@ -8,7 +9,7 @@ import "./BookList.css";
 //https://covers.openlibrary.org/b/id/240727-S.jpg
 
 const BookList = () => {
-  const {books, loading, resultTitle} = useGlobalContext();
+  const { books, loading, resultTitle } = useGlobalContext();
   const booksWithCovers = books.map((singleBook) => {
     return {
       ...singleBook,
@@ -18,11 +19,12 @@ const BookList = () => {
     }
   });
 
-  if(loading) return <Loading />;
+  if (loading) return <Loading />;
 
   return (
     <section className='booklist'>
       <div className='container'>
+        <SearchForm />
         <div className='section-title'>
           <h2>{resultTitle}</h2>
         </div>
@@ -30,7 +32,7 @@ const BookList = () => {
           {
             booksWithCovers.slice(0, 30).map((item, index) => {
               return (
-                <Book key = {index} {...item} />
+                <Book key={index} {...item} />
               )
             })
           }

@@ -15,11 +15,11 @@ function Login() {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      
+
       console.log("Logged in successfully!");
-      
-      navigate("/");
-      
+
+      navigate("/book");
+
     } catch (error) {
       console.error("Error logging in:", error.message);
     }
@@ -27,27 +27,27 @@ function Login() {
 
   return (
     <div className="wrapper">
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Email:</label>
-          <input
-            type="email"
-            className="round"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label>Password:</label>
-          <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-      <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
-    </div></div>
+      <div className="login-container">
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Email:</label>
+            <input
+              type="email"
+              className="round"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>Password:</label>
+            <PasswordInput className="round" value={password} onChange={(e) => setPassword(e.target.value)} />
+          </div>
+          <button id="Login" type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+      </div></div>
   );
 }
 

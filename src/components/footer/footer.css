@@ -1,0 +1,22 @@
+footer {
+  background-color: #f1f0e8;
+  color: #e47b7b;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  /* Stick to the bottom of the viewport */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -1,11 +1,12 @@
-import React, {useRef, useEffect} from 'react';
-import {FaSearch} from "react-icons/fa";
+import React, { useRef, useEffect } from 'react';
+import { FaSearch } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { useGlobalContext } from '../../context.';
+
 import "./SearchForm.css";
 
 const SearchForm = () => {
-  const {setSearchTerm, setResultTitle} = useGlobalContext();
+  const { setSearchTerm, setResultTitle } = useGlobalContext();
   const searchText = useRef('');
   const navigate = useNavigate();
 
@@ -13,7 +14,7 @@ const SearchForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let tempSearchTerm = searchText.current.value.trim();
-    if((tempSearchTerm.replace(/[^\w\s]/gi,"")).length === 0){
+    if ((tempSearchTerm.replace(/[^\w\s]/gi, "")).length === 0) {
       setSearchTerm("the lost world");
       setResultTitle("Please Enter Something ...");
     } else {
@@ -28,10 +29,10 @@ const SearchForm = () => {
       <div className='container'>
         <div className='search-form-content'>
           <form className='search-form' onSubmit={handleSubmit}>
-            <div className='search-form-elem flex flex-sb bg-white'>
-              <input type = "text" className='form-control' placeholder='The Lost World ...' ref = {searchText} />
-              <button type = "submit" className='flex flex-c' onClick={handleSubmit}>
-                <FaSearch className='text-purple' size = {32} />
+            <div className='search-form-elem border-1 flex flex-sb bg-white'>
+              <input type="text" className='form-control' placeholder='    The Lost World ...' ref={searchText} />
+              <button type="submit" className='flex flex-c' onClick={handleSubmit}>
+                <FaSearch className='text-purple' size={27} />
               </button>
             </div>
           </form>

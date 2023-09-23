@@ -1,6 +1,11 @@
 .navbar {
   /* padding: 1rem 0; */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: rgb(235, 235, 240);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  /* background-color: ; */
 }
 
 .navbar-brand {
@@ -23,6 +28,14 @@
 .navbar-toggler-btn {
   transition: var(--transition);
   z-index: 11;
+}
+
+.headingColor:hover {
+  color: #E55604;
+}
+
+.headingColor {
+  transition: var(--transition);
 }
 
 .navbar-collapse {
@@ -52,7 +65,7 @@
 }
 
 .nav-link:hover {
-  color: var(--purple-color);
+  color: #E55604;
 }
 
 @media screen and (min-width: 992px) {

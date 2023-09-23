@@ -26,7 +26,7 @@ function Signup() {
       );
 
       console.log("Signed up successfully!");
-    
+
       navigate('/login');
 
     } catch (error) {
@@ -41,7 +41,7 @@ function Signup() {
         <div className="form-group">
           <label>Name:</label>
           <input
-            type="text"
+            type="text" className="signup-1"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -50,7 +50,7 @@ function Signup() {
         <div className="form-group">
           <label>Email:</label>
           <input
-            type="email"
+            type="email" className="signup-1"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -58,9 +58,9 @@ function Signup() {
         </div>
         <div className="form-group">
           <label>Password:</label>
-          <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} />
+          <PasswordInput className="signup-1" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button type="submit">Sign Up</button>
+        <button id="SignUp" type="submit">Sign Up</button>
       </form>
       <p>
         Already have an account? <Link to="/login">Login</Link>

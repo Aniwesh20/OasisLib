@@ -1,60 +1,82 @@
-
-
 .wrapper {
-/*  */
-    text-align: center;
-    /* max-height: 60vh; */
-    max-width: 50vh;
-    background-color: rgba(209, 92, 92, 0.8); /* Background color of the centered container */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 15vh auto;
-    /* margin-top: 10vh; */
+  /*  */
+  text-align: center;
+  /* max-height: 60vh; */
+  max-width: 50vh;
+  background-color: #fff3da;
+  /* Background color of the centered container */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 15vh auto;
+  /* margin-top: 10vh; */
 }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .round {
-    border-radius: 25px;
-  }
 
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-  }
-  
-  button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.round {
+  border-radius: 25px;
+}
+
+.round,
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+/* #Login {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ba704f;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#Login:hover {
+  background-color: #fd8d14;
+} */
+
+
+#Login {
+  background-image: linear-gradient(to right, #FF8008 0%, #FFC837 51%, #FF8008 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(255, 251, 251);
+  box-shadow: 0 0 20px #ffd3d3;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+#Login:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

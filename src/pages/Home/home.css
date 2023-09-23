@@ -14,4 +14,44 @@
   margin-bottom: 2.8rem;
   opacity: 0.8;
   max-width: 770px;
+  font-weight: 600;
+  font-size: x-large;
 }
+
+.home-btn {
+  background-image: linear-gradient(to right, #FF8008 0%, #FFC837 51%, #FF8008 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(255, 251, 251);
+  box-shadow: 0 0 20px #ffd3d3;
+  border-radius: 25px;
+  display: block;
+
+}
+
+.home-btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .home-btn {
+  background-color: #eba77f;
+  width: 100px;
+  height: 45px;
+  border-radius: 25px;
+  border: 2px solid rgb(112, 217, 218);
+  font-size: medium;
+  font-weight: 400;
+}
+
+.home-btn:hover {
+  color: aliceblue;
+  background-color: rgba(228, 51, 15, 0.625);
+  border: 2px solid rgb(218, 142, 112);
+} */
