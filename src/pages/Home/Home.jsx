@@ -1,5 +1,7 @@
 import React from 'react';
 // import Header from '../../components/Header/Header';
+import { useGlobalContext } from '../../context.';
+import Loading from "../../components/Loader/Loader";
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 // import Navbar from "../../components/Navbar/Navbar"
@@ -7,6 +9,8 @@ import { Link } from 'react-router-dom';
 import "./home.css"
 
 const Home = () => {
+  const { loading } = useGlobalContext();
+  if (loading) return <Loading />;
   return (
 
 

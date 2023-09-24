@@ -16,7 +16,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
 
-      console.log("Logged in successfully!");
+      alert("Logged in successfully!");
 
       navigate("/book");
 
