@@ -1,4 +1,4 @@
-# OasisLib
+
 
 
 # Discription:-
@@ -9,8 +9,27 @@
 
 -> https://oasislibrary.vercel.app/
 
+Home Page:- 
 
 The Home page of the Oasis Library consist of functionalities like a very catchy UI made by using UI calls API and has buttons realted to windowa like login , search Book, about ,etc.
+
+
+Sign up Page:-
+
+
+
+Login Page:-
+
+
+
+Search Book page:-
+
+
+
+About us:-
+
+
+
 
 
 
