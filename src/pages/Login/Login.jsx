@@ -21,7 +21,21 @@ function Login() {
       navigate("/book");
 
     } catch (error) {
+      if (error.code === "auth/invalid-login-credentials") {
+        alert("Incorrect password. Please try again.");
+      } else if (error.code === "auth/user-not-found") {
+        alert("User not found. Please check your email and try again.");
+      } else if (error.code === "auth/invalid-email") {
+        alert("Invalid email. Please enter a valid email address.");
+      } else if (error.code === "auth/user-disabled") {
+        alert("Your account has been disabled. Please contact support.");
+      } else {
+        alert("An error occurred while logging in. Please try again later.");
+      }
+
       console.error("Error logging in:", error.message);
+      
+      
     }
   };
 

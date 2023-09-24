@@ -30,6 +30,9 @@ function Signup() {
       navigate('/login');
 
     } catch (error) {
+      if (error.code === "auth/invalid-email") {
+        alert("Invalid email. Please enter a valid email address.");
+      }
       console.error("Error signing up:", error.message);
     }
   };
