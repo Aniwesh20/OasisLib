@@ -1,15 +1,12 @@
 .wrapper {
-  /*  */
   text-align: center;
-  /* max-height: 60vh; */
   max-width: 50vh;
   background-color: #fff3da;
-  /* Background color of the centered container */
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 15vh auto;
-  /* margin-top: 10vh; */
+
 }
 
 h2 {
@@ -41,22 +38,10 @@ input[type="password"] {
   border-radius: 25px;
 }
 
-/* #Login {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #ba704f;
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 16px;
+.signup-hover:hover {
+  color: #fd8d14;
+
 }
-
-#Login:hover {
-  background-color: #fd8d14;
-} */
-
 
 #Login {
   background-image: linear-gradient(to right, #FF8008 0%, #FFC837 51%, #FF8008 100%);
@@ -76,7 +61,6 @@ input[type="password"] {
 
 #Login:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }

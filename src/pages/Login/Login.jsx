@@ -46,7 +46,7 @@ function Login() {
           </div>
           <button id="Login" type="submit">Login</button>
         </form>
-        <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+        <p>Don't have an account? <Link className="signup-hover" to="/signup">Sign Up</Link></p>
       </div></div>
   );
 }

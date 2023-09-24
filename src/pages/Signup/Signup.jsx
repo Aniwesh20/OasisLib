@@ -63,7 +63,7 @@ function Signup() {
         <button id="SignUp" type="submit">Sign Up</button>
       </form>
       <p>
-        Already have an account? <Link to="/login">Login</Link>
+        Already have an account? <Link className="login-hover" to="/login">Login</Link>
       </p>
     </div>
   );
