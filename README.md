@@ -11,13 +11,12 @@
 
 Home Page:- 
 
-The Home page of the Oasis Library consist of functionalities like a very catchy UI made by using UI calls API and has buttons realted to windowa like login , search Book, about ,etc.
-
-![Home Page](https://github.com/Aniwesh20/OasisLib/blob/main/public/Home%20page.png)
+- The Home page of the Oasis Library consist of functionalities like a very catchy UI made by using UI calls API and has buttons realted to windowa like login , search Book, about ,etc.
 
 
 Sign up Page:-
 
+- The Signup Page consist of feeatures like login and 
 
 
 Login Page:-
